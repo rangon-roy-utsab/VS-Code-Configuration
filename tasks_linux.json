@@ -1,0 +1,52 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build and Run from I/O",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-g", "-fsanitize=address", "-fsanitize=undefined",
+                "&&",
+                "${fileDirname}/./${fileBasenameNoExtension}",
+                "</home/rangon/dev/in.txt>/home/rangon/dev/out.txt"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "/usr/bin/g++"
+        },
+
+        
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-std=c++17", "-Wshadow", "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}/./${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "usr/bin/"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: /usr/bin/g++"
+        },
+        
+    ],
+    "version": "2.0.0"
+}
