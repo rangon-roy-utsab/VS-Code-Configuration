@@ -1,0 +1,46 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build",
+            "command": "C:\\Programs\\msys2-mingw64-9\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:/Programs/msys2-mingw64-9/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\Programs\\msys2-mingw64-9\\bin\\g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build and Run from I/O",
+            "command": "C:\\Programs\\msys2-mingw64-9\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "&&",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "<C:/Users/DELL/dev/in.txt>C:/Users/DELL/dev/out.txt"
+            ],
+            "options": {
+                "cwd": "C:/Programs/msys2-mingw64-9/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\Programs\\msys2-mingw64-9\\bin\\g++.exe"
+        },
+    ],
+    "version": "2.0.0"
+}
